@@ -6,14 +6,12 @@
 
 ```
 npm install
-
 ```
 
 ### Then
 
 ```
 webpack-dev-server
-
 ```
 
 ### This will run local server on your machine, to visit the site go to [http://localhost:12000/](http://localhost:12000/)
