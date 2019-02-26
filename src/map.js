@@ -47,7 +47,7 @@
     options.map = $.extend(mapOption, options.map);
 
     // Define Google Maps API URLs with user's apikey
-    const GOOGLE_MAPS_API_URL = 'http://maps.google.com/maps/api/js?key=API_KEY&libraries=places'.replace(
+    const GOOGLE_MAPS_API_URL = 'https://maps.google.com/maps/api/js?key=API_KEY&libraries=places'.replace(
       'API_KEY',
       options.map.apiKey
     );
