@@ -1,6 +1,6 @@
 # summernote-markdown (WIP)
 
-#### Simple "plugin like" button to convert HTML to MD to HTML with options to change in both markup.
+#### Simple "plugin like" button to convert HTML to MD to HTML with options to change in both markup. This project comes with 5 other plugins for summernote. To convert to Markdown I use Turndown.js + GFM Plugin. To convert to HTML I use Showdown.js.
 
 ### To get started clone/fork this repo and install all modules by
 
