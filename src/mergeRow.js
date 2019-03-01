@@ -47,11 +47,14 @@
         let pr = prompt('How many?');
 
         td.attr('rowspan', pr);
-
-        tr.next()
-          .find('td')
-          .first()
-          .remove();
+        if (pr == '' || pr == undefined || pr == '1' || pr == '0') {
+          return;
+        } else {
+          tr.next()
+            .find('td')
+            .first()
+            .remove();
+        }
       };
     }
   });

@@ -45,8 +45,12 @@
       this.toggleMergeCell = function() {
         let pr = prompt('How many?');
         td.attr('colspan', pr);
-        for (let i = 1; pr > i; i++) {
-          td.next().remove();
+        if (pr == '' || pr == undefined || pr == '1' || pr == '0') {
+          return;
+        } else {
+          for (let i = 1; pr > i; i++) {
+            td.next().remove();
+          }
         }
       };
     }
