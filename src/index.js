@@ -8,6 +8,8 @@ import './imgAtr';
 import './map';
 import './video';
 import './br';
+import './mergeCell';
+import './mergeRow';
 import { Markdown } from './md';
 
 $('#summernote').summernote({
@@ -18,10 +20,6 @@ $('#summernote').summernote({
       lng: 151.2195
     },
     zoom: 13
-  },
-  height: 150,
-  codemirror: {
-    theme: 'monokai'
   },
 
   toolbar: [
@@ -40,7 +38,7 @@ $('#summernote').summernote({
   },
   popover: {
     table: [
-      ['custom', ['tableHeaders']],
+      ['custom', ['tableHeaders', 'mergeCell', 'mergeRow']],
       ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
       ['delete', ['deleteRow', 'deleteCol', 'deleteTable']]
     ],
