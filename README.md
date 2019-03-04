@@ -20,3 +20,10 @@ webpack-dev-server
 
 Bundle.js is BIGGGG because there is a lot of stuff like FontAwesome, Bootstrap, JQuery etc. I will remove all those stuff on production but now for me it's easier.
 Remember this is work in progress.
+
+## TODO:
+
+- table resize
+- better markdown
+- fix for firefox
+- drag&drop image/s
