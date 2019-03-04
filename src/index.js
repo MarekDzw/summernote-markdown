@@ -13,15 +13,6 @@ import './mergeRow';
 import { Markdown } from './md';
 
 $('#summernote').summernote({
-  callbacks: {
-    onChange: function() {
-      $('tr:first-child')
-        .children('td')
-        .replaceWith(function(i, html) {
-          return '<th>' + html + '</th>';
-        });
-    }
-  },
   map: {
     apiKey: '',
     center: {
