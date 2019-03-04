@@ -35,25 +35,28 @@
       });
       let td;
       let tr;
+
       $('body').on('click', 'td', function() {
         td = $(this);
         return td;
       });
       $('body').on('click', 'tr', function() {
         tr = $(this);
+
         return tr;
       });
+
       this.toggleMergeRow = function() {
         let pr = prompt('How many?');
-
         td.attr('rowspan', pr);
+        let $num = tr.nextAll();
+        var arr = [].slice.call($num);
         if (pr == '' || pr == undefined || pr == '1' || pr == '0') {
           return;
         } else {
-          tr.next()
-            .find('td')
-            .first()
-            .remove();
+          for (i = 0; pr - 1 > i; i++) {
+            arr[i].firstChild.remove();
+          }
         }
       };
     }
