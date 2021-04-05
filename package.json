@@ -12,7 +12,7 @@
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
-    "bootstrap": "^3.3.5",
+    "bootstrap": "^3.4.1",
     "codemirror": "^5.44.0",
     "column-resizer": "^1.2.2",
     "croppie": "^2.6.3",
